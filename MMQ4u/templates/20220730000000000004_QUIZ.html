@@ -1,0 +1,14 @@
+{{ quiz_name }}<br/><br/>
+{{ quiz_data }}<br/><br/>
+{% for i in quiz_data %}
+    {{ i.0 }}<br/>
+    {% for x in i.1 %}
+        {% for y in x.0 %}
+        {{y.2}}<br/>
+        {% endfor %}
+        {% for y in x.1 %}
+            {{ y.1 }}<br/>
+        {% endfor %}
+    {% endfor %}
+{% endfor %}
+<br/>{{ quiz_ansr }}<br/>

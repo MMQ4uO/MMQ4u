@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ar">
+    <head>
+<!--    v0.0.1                      -->
+<!--    info                        -->
+        <link href="" rel="icon" type="image/png"/>
+        <title>
+            المميز والمتميز التعليمي
+        </title>
+        <meta name="المميز والمتميز التعليمي" content=""/>
+        <meta charset="UTF-8"/>
+<!--    CSS                         -->
+<!--    Fonts                       -->
+        <link rel="stylesheet" type="text/css" href="{% static 'font/alqabas/alqabas.css' %}"/>
+    </head>
+    <body>
+        <div style="margin: auto;width: 234px;">
+            <div style="display:flex;
+                        width: 237px;
+                        flex-direction: row;
+                        font-family: 'alqabas';
+                        font-size: 100px;
+                        letter-spacing: 2.5px;">
+                <div style="color: rgba(0, 44, 73, 1);">{{ response.0 }}</div>
+                <div style="color: rgba(40, 201, 226, 1)">{{ response.1 }}</div>
+                <div style="color: rgba(0, 44, 73, 1);">{{ response.2 }}</div>
+                <div style="color: rgba(40, 201, 226, 1);
+                            padding: 0 0 0 20px;
+                            font-size: 90px;">:</div>
+                <div style="color: rgba(40, 201, 226, 1);
+                            font-size: 90px;">(</div>
+            </div>
+            <div style="color: rgba(0, 44, 73, 1);
+                        font-size: 39px;">page not found</div>
+        </div>
+    </body>
+<!--    JS                          -->
+    <script>
+        setInterval(() => {
+            document.querySelectorAll("div")[0].style.margin = (window.innerHeight - 160) / 2 + "px auto";
+        }, 0);
+    </script>
+</html>

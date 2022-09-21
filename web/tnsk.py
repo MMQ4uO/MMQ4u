@@ -60,8 +60,6 @@ class tnskAPI():
 				i += 1
 
 		return r2
-	
-print(tnskAPI('1001010&0&2014').print())
 # R2 = []
 # y = 0
 # for x in T1[:3]:
